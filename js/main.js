@@ -104,6 +104,7 @@ function testScript () {
           outputPre.textContent = 'Median of ' + srcLoad.iterations + ' iterations:' +
             '\nWithout optimize-js : ' + srcLoad.median.toFixed(2) + ' ms' +
             '\nWith optimize-js    : ' + optimizedSrcLoad.median.toFixed(2) + ' ms'
+          console.log(outputPre.textContent);
           goButton.disabled = false
         })
       })
